@@ -103,6 +103,8 @@ lblse<-paste(pbs$Segment,pcte)
 lblse<-paste(lblse, "%", sep=" ")
 colors= c("yellow", "red", "black")
 pie(pbs$Profit, labels =lblse, main = "Percentage of Profits by Segment")
+Inference0<- c("Consumer segment fetches the store with highest amount of sales and profits, followed by corporate and home office segments, store must focus on improving its grip on the consumers segment so as to reach higher profits.")
+Inference0
 
 #Regression
 Regression<- lm(SampleSuperstore$Profit~ SampleSuperstore$Sales+ SampleSuperstore$Quantity + SampleSuperstore$Discount)
